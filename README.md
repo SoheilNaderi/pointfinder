@@ -1,5 +1,5 @@
 # pointfinder
- a tools for find endpoint (paths , urls) from js file.
+ A tools for find endpoint (paths , urls) from js file.
 ## Installation 
  ```
     git clone https://github.com/SoheilNaderi/pointfinder.git
