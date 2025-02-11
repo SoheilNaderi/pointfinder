@@ -2,6 +2,7 @@ import re
 import requests
 from urllib.parse import urljoin
 import sys
+import pyfiglet
 
 def get_js_files(url):
     url="https://"+url
@@ -53,7 +54,13 @@ def main(domain):
         for path in paths:
             f.write(path + "\n")
 
+def banner(tool_name):
+    ascii_art = pyfiglet.figlet_format(tool_name, font="slant")
+    return ascii_art
+
 if __name__ == "__main__":
+    print(banner("pointfinder"))
+    print(f"Developed by: @soeilnaderi")
     if len(sys.argv) > 1:
         print("[*] Wait for finding...")
         main(sys.argv[1])
